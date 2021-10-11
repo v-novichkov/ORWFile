@@ -1,3 +1,4 @@
+from pprint import pprint
 Recipes = "recipes.txt"
 cook_book = dict()
 
@@ -18,5 +19,6 @@ def get_data(file_name):
             cook_book[cook_name] = temp_list
 
             file.readline()
-    return data
+    return cook_book
 
+pprint(get_data(Recipes))
